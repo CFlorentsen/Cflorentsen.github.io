@@ -6,15 +6,15 @@ html, body {
 html {
     display: table;
     margin: auto;
-    background-color: #1b1b1b;
+    background-color: #e0e0e0;
 }
 
 body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
     font-family: "Calibri";
     font-weight: 300;
-    color:#e0e0e0;
+    color:#1b1b1b;
 }
 
 
@@ -26,7 +26,7 @@ h1 {
 
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     /*background-color: #ccc;*/
     margin: 20px;
     padding: 40px;
@@ -42,6 +42,14 @@ p {
 a {
     color: inherit;
     text-decoration: none;
+}
+b {
+    font-size: 20px;
+    color:white;
+}
+ed {
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 /*.circle {
@@ -77,10 +85,11 @@ a {
     }
   }
   */
+  /* FRONT PAGE WHEEL */
   .main {
 	position:relative;
-	width:400px;
-	height:400px;
+	width:500px;
+	height:500px;
 	margin: auto;
 }
   .quarter {
@@ -89,13 +98,13 @@ a {
 	height:50%;
 	transition:background-color 0.2s ease-in-out;
     cursor:pointer;
-    box-shadow:0px 0px 5px rgba(207, 193, 193, 0.7);
+    box-shadow:0px 0px 10px rgba(207, 193, 193, 0.7);
 }
 
 .quarter1 {
 	top:0;
 	left:0;
-    line-height: 200px;
+    line-height: 300px;
     font-size: 18px;
     text-align: center;
 	background-color:#78adeb;
@@ -104,7 +113,7 @@ a {
 .quarter2 {
 	top:0;
 	right:0;
-    line-height: 200px;
+    line-height: 300px;
     font-size: 18px;
     text-align: center;
 	background-color:#5586c4;
@@ -129,12 +138,13 @@ a {
 	border-radius:0 0 100% 0 ;
 }
 .quarter:hover {
-	background-color:rgb(74, 108, 110);
+	background-color:#b3c4da;
     box-shadow:0px 0px 15px rgba(0,0,0,0.7);
 }
-.box {
+
+/*.box {
     color:#e0e0e0;
-    /*padding: 40px;*/
+    padding: 40px;
     position: relative;
     text-align: center;
     background-color: #efefef;
@@ -148,14 +158,77 @@ a {
 .novo  { background-color: #2d5b99; }
 .NHM   { background-color: #1d4c8a; }
 .Youtube { background-color: #063d7a; }
+*/
 
+/* EXPERIENCE CONTAINERS */
 
 .grid-container {
+    position: relative;
     display: grid;
-    width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
     height: 300px;
-    grid-template-columns: 150px 150px 150px 150px; /*grid-template-columns: 1fr 1fr 1fr 1fr;   */
-    grid-template-rows: 100px 100px;  /*grid-template-rows: 100px 100px;*/
-    justify-content: space-between;
-    align-content: space-around;
+    grid-template-columns: 175px 175px 175px 175px; /*grid-template-columns: 1fr 1fr 1fr 1fr;   */
+    grid-template-rows: 125px 125px;  /*grid-template-rows: 100px 100px;*/
+    /*justify-content: space-around;
+    align-content: space-around;*/
+    grid-gap: 5px;
+}
+
+.column {
+    float: left;
+    width: 43%;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  /* Publications */
+
+h3 {
+    font-size: 30px;
+    margin: 25px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, #699cda, #5586c4, #33609f, #063d7a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    text-align: left;
+    margin: 30px;
+    font-size: 20px;
+}
+h5 {
+    text-align: left;
+    margin: 30px;
+    font-size: 18;
 }
