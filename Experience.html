@@ -2,30 +2,130 @@
 
 <html>
 <head>
-    <title>Profile</title>
+    <title>Experience</title>
 
 
     <link rel="stylesheet" href="main.css">
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
     <h1>
-        <a href="file:///Users/florentsen/Desktop/github_website%20copy/index.html">Christoffer Florentsen</a>
-        <br> PhD
+        <a href="https://cflorentsen.github.io/">Christoffer Florentsen, PhD in biophysics</a>
     </h1>
     <p>Experience</p>
 
+    <!-- The grid: four columns -->
     <div class="grid-container">
-        <div class='box postdoc'>PostDoc</div>
-        <div class='box phd'>PhD</div>
-        <div class='box kaleido'>R&D engineer</div>
-        <div class='box lejerbo'>Property Manager</div>
-        <div class='box postdoc'>Teacher</div>
-        <div class='box phd'>Intern</div>
-        <div class='box kaleido'>Custodian and host</div>
-        <div class='box lejerbo'>Programme host</div>
+        <div class='column' onclick="openTab('b1')" style="background:#063d7a;">
+            PostDoc
+        </div>
+        <div class='column' onclick="openTab('b2')" style="background:#1d4c8a;">
+            PhD
+        </div>
+        <div class='column' onclick="openTab('b3')" style="background:#2d5b99;">
+            R&D engineer
+        </div>
+        <div class='column' onclick="openTab('b4')" style="background:#3d6ba9;"
+        >Property Manager
+        </div>
+        <div class='column' onclick="openTab('b5')" style="background:#4c7bba;">
+            Teacher
+        </div>
+        <div class='column' onclick="openTab('b6')" style="background:#5a8bca;">
+            Intern
+        </div>
+        <div class='column' onclick="openTab('b7')" style="background:#699cda;">
+            Custodian and host
+        </div>
+        <div class='column' onclick="openTab('b8')" style="background:#78adeb;">
+            Customer service
+        </div>
     </div>
+    <!--The expanding grid hidden by default-->
+    <div id="b1" class="containerTab" style="display:none;background:#063d7a">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Postdoctoral Researcher</h2>
+        <p> <ul> 
+            <li>Stem cell research</li>
+            <li>Biophysics of membranes, proteins and cells</li>
+            <li>Data analysis</li>
+        </ul>
+        </p>
+    </div>
+    <div id="b2" class="containerTab" style="display:none;background:#1d4c8a">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>PhD</h2>
+        <p><ul>
+            <li>Research in protein science, membrane-protein interactions and drug delivery techniques</li>
+            <li>Data analysis</li>
+            <li>Teaching</li>
+            <li>Supervision of 5 MSc. student projects</li>
+            <li>Presentations</li>
+            <li>Collaboration with several scientific groups</li>
+        </ul></p>
+    </div>
+      
+    <div id="b3" class="containerTab" style="display:none;background:#2d5b99">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>R&D Engineer</h2>
+        <p>
+            <ul>
+                <li>Responsibility for, and evaluation of projects</li>
+                <li>Optical component analysis</li>
+                <li>Analysis of data from R&D processes</li>
+                <li>Product optimization</li>
+                <li>Scientific reporting, guideline and SOPs</li>
+            </ul>
+        </p>
+    </div>
+    <div id="b4" class="containerTab" style="display:none;background:#3d6ba9">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Property manager</h2>
+        <p><ul>
+            <li>Leadership skills</li>
+            <li>Budget handling</li>
+            <li>Communication</li>
+            <li>Project maintainance</li>
+        </ul></p>
+    </div>
+    <div id="b5" class="containerTab" style="display:none;background:#4c7bba">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Teacher</h2>
+        <p><ul>
+            <li>Teaching nanoscience, physics, biology and chemistry to students in their final years of public
+                school</li>
+        </ul></p>
+    </div>
+      
+    <div id="b6" class="containerTab" style="display:none;background:#5a8bca">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Intern</h2>
+        <p><ul>
+            <li>LEAN-team internship</li>
+        </ul></p>
+    </div>
+    <div id="b7" class="containerTab" style="display:none;background:#699cda">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Custodian and host</h2>
+        <p><ul>
+            <li>Explain natural phenomena in biology, physics and geology to the guests</li>
+            <li>Teaching</li>
+        </ul></p>
+    </div>
+    <div id="b8" class="containerTab" style="display:none;background:#78adeb">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Customer service representative</h2>
+        <p><ul>
+            <li>Customer service representative</li>
+            <li>Accounting</li>
+        </ul></p>
+    </div>
+     
 </body>
 </html>
 
