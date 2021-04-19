@@ -1,3 +1,4 @@
+/* color codes from #78ADEB to #063D7A*/
 html, body {
     height: 100%;
 }
@@ -11,9 +12,9 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
-    font-family: "Avenir";
+    font-family: "Calibri";
     font-weight: 300;
-    color:#c8eef5;
+    color:#e0e0e0;
 }
 
 
@@ -21,6 +22,16 @@ h1 {
     text-align: center;
     font-size: 40px;
     color: inherit;
+}
+
+
+h2 {
+    font-size: 18px;
+    /*background-color: #ccc;*/
+    margin: 20px;
+    padding: 40px;
+    text-align: justify;
+    font-weight: lighter;
 }
 
 p {
@@ -32,7 +43,8 @@ a {
     color: inherit;
     text-decoration: none;
 }
-.circle {
+
+/*.circle {
     display: block;
     background: black;
     border-radius: 50%;
@@ -64,6 +76,7 @@ a {
       transform: scale(1);
     }
   }
+  */
   .main {
 	position:relative;
 	width:400px;
@@ -76,7 +89,7 @@ a {
 	height:50%;
 	transition:background-color 0.2s ease-in-out;
     cursor:pointer;
-    box-shadow:0px 0px 15px rgba(207, 193, 193, 0.7);
+    box-shadow:0px 0px 5px rgba(207, 193, 193, 0.7);
 }
 
 .quarter1 {
@@ -85,7 +98,7 @@ a {
     line-height: 200px;
     font-size: 18px;
     text-align: center;
-	background-color:rgb(72, 87, 133);
+	background-color:#78adeb;
 	border-radius:100% 0 0 0;
 }
 .quarter2 {
@@ -94,7 +107,7 @@ a {
     line-height: 200px;
     font-size: 18px;
     text-align: center;
-	background-color:rgb(34, 65, 131);
+	background-color:#5586c4;
 	border-radius:0 100% 0 0 ;
 }
 .quarter3 {
@@ -103,7 +116,7 @@ a {
     font-size: 18px;
     line-height: 200px;
     text-align: center;
-	background-color:rgb(22, 38, 109);
+	background-color:#33609f;
 	border-radius:0 0 0 100%;
 }
 .quarter4 {
@@ -112,11 +125,37 @@ a {
     line-height: 200px;
     font-size: 18px;
     text-align: center;
-	background-color:rgb(53, 61, 90);
+	background-color:#063d7a;
 	border-radius:0 0 100% 0 ;
 }
 .quarter:hover {
 	background-color:rgb(74, 108, 110);
     box-shadow:0px 0px 15px rgba(0,0,0,0.7);
 }
+.box {
+    color:#e0e0e0;
+    /*padding: 40px;*/
+    position: relative;
+    text-align: center;
+    background-color: #efefef;
+}
 
+.postdoc   { background-color: #78adeb; }
+.phd  { background-color: #699cda; }
+.kaleido   { background-color: #5a8bca; }
+.lejerbo { background-color: #4c7bba; }
+.skoletjenesten   { background-color: #3d6ba9; }
+.novo  { background-color: #2d5b99; }
+.NHM   { background-color: #1d4c8a; }
+.Youtube { background-color: #063d7a; }
+
+
+.grid-container {
+    display: grid;
+    width: 800px;
+    height: 300px;
+    grid-template-columns: 150px 150px 150px 150px; /*grid-template-columns: 1fr 1fr 1fr 1fr;   */
+    grid-template-rows: 100px 100px;  /*grid-template-rows: 100px 100px;*/
+    justify-content: space-between;
+    align-content: space-around;
+}
