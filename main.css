@@ -1,18 +1,122 @@
+html, body {
+    height: 100%;
+}
+
 html {
-    margin: 20px;
-    background-color: #2c9e1d;
+    display: table;
+    margin: auto;
+    background-color: #1b1b1b;
 }
 
 body {
+    display: table-cell;
+    vertical-align: middle;
     font-family: "Avenir";
     font-weight: 300;
-    color:#b9a5a5;
+    color:#c8eef5;
 }
 
+
 h1 {
-    font-size: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: inherit;
 }
 
 p {
+    text-align: center;
     font-size: 20px;
-} 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.circle {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    line-height: 300px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background: radial-gradient(circle at 100px 100px, #2c3b4d, #000);
+    animation: bubble-anim 5s ease-out infinite;
+  }
+
+  @keyframes bubble-anim {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scaleY(0.97) scaleX(1.03);
+    }
+    50% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scaleY(1.03) scaleX(0.97);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .main {
+	position:relative;
+	width:400px;
+	height:400px;
+	margin: auto;
+}
+  .quarter {
+	position:absolute;
+	width:50%;
+	height:50%;
+	transition:background-color 0.2s ease-in-out;
+    cursor:pointer;
+    box-shadow:0px 0px 15px rgba(207, 193, 193, 0.7);
+}
+
+.quarter1 {
+	top:0;
+	left:0;
+    line-height: 200px;
+    font-size: 18px;
+    text-align: center;
+	background-color:rgb(72, 87, 133);
+	border-radius:100% 0 0 0;
+}
+.quarter2 {
+	top:0;
+	right:0;
+    line-height: 200px;
+    font-size: 18px;
+    text-align: center;
+	background-color:rgb(34, 65, 131);
+	border-radius:0 100% 0 0 ;
+}
+.quarter3 {
+	bottom:0;
+	left:0;
+    font-size: 18px;
+    line-height: 200px;
+    text-align: center;
+	background-color:rgb(22, 38, 109);
+	border-radius:0 0 0 100%;
+}
+.quarter4 {
+	bottom:0;
+	right:0;
+    line-height: 200px;
+    font-size: 18px;
+    text-align: center;
+	background-color:rgb(53, 61, 90);
+	border-radius:0 0 100% 0 ;
+}
+.quarter:hover {
+	background-color:rgb(74, 108, 110);
+    box-shadow:0px 0px 15px rgba(0,0,0,0.7);
+}
+
