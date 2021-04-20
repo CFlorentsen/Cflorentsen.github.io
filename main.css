@@ -166,7 +166,7 @@ ed {
 .grid-container {
     position: relative;
     display: grid;
-    max-width: 715px;
+    max-width: 725px;
     margin: 0 auto;
     height: 300px;
     grid-template-columns: 175px 175px 175px 175px; /*grid-template-columns: 1fr 1fr 1fr 1fr;   */
