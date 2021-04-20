@@ -167,7 +167,7 @@ ed {
     position: relative;
     display: grid;
     max-width: 725px;
-    margin: 0 auto;
+    margin: auto auto;
     height: 300px;
     grid-template-columns: 175px 175px 175px 175px; /*grid-template-columns: 1fr 1fr 1fr 1fr;   */
     grid-template-rows: 125px 125px;  /*grid-template-rows: 100px 100px;*/
