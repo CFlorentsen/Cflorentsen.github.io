@@ -179,7 +179,7 @@ ed {
 .column {
     float: left;
     width: 43%;
-    padding: 0px;
+    padding: 50px;
     text-align: center;
     position: relative;
     font-size: 20px;
