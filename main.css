@@ -1,4 +1,20 @@
 /* color codes from #78ADEB to #063D7A*/
+
+/* FONTS */
+
+@font-face {
+    font-family: 'cast_ironcondensed';
+    src: url('fonts/castiron-condensed-webfont.woff2') format('woff2'),
+         url('fonts/castiron-condensed-webfont.woff') format('woff'),
+         url(fonts/castiron-condensed-webfont.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* BODY WORK */
+
+
 html, body {
     height: 100%;
 }
@@ -12,7 +28,7 @@ html {
 body {
     display: table-cell;
     vertical-align: top;
-    font-family: "Calibri";
+    font-family: "cast_ironcondensed";
     font-weight: 300;
     color:#1b1b1b;
 }
