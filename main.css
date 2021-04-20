@@ -11,6 +11,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('fonts/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* BODY WORK */
 
@@ -28,7 +36,7 @@ html {
 body {
     display: table-cell;
     vertical-align: top;
-    font-family: "cast_ironcondensed";
+    font-family: "quicksandlight";
     font-weight: 300;
     color:#1b1b1b;
 }
