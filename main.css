@@ -132,7 +132,7 @@ ed {
     line-height: 300px;
     font-size: 18px;
     text-align: center;
-	background-color:#790AFC5; /*8adeb;*/
+	background-color:#021C1E; /*8adeb;*/
 	border-radius:100% 0 0 0;
 }
 .quarter2 {
@@ -141,7 +141,7 @@ ed {
     line-height: 300px;
     font-size: 18px;
     text-align: center;
-	background-color:#336B87; /*5586c4;*/
+	background-color:#004445; /*5586c4;*/
 	border-radius:0 100% 0 0 ;
 }
 .quarter3 {
@@ -150,7 +150,7 @@ ed {
     font-size: 18px;
     line-height: 200px;
     text-align: center;
-	background-color:#2A3132; /*33609f;*/
+	background-color:#2C7873; /*33609f;*/
 	border-radius:0 0 0 100%;
 }
 .quarter4 {
@@ -159,7 +159,7 @@ ed {
     line-height: 200px;
     font-size: 18px;
     text-align: center;
-	background-color:#763626; /*063d7a;*/
+	background-color:#6FB98F; /*063d7a;*/
 	border-radius:0 0 100% 0 ;
 }
 .quarter:hover {
