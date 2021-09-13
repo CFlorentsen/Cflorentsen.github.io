@@ -163,7 +163,7 @@ ed {
 	border-radius:0 0 100% 0 ;
 }
 .quarter:hover {
-	background-color:#b3c4da;
+	background-color:#7D5642; /*b3c4da;*/
     box-shadow:0px 0px 15px rgba(0,0,0,0.7);
 }
 
